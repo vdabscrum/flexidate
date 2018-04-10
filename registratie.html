@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Flexdating</title>
+</head>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script async src="js/flexi_scrum_2.1.0.js"></script>
+	
+<!-- <script defer>
+    window.onload = function () {
+		//localStorage.removeItem('flexidata');
+		//scrumlib.reset();
+        console.log(scrumlib.getAllDatasets());
+    }
+</script> -->
+<script src="js/registratie.js"></script>	
+<div id="registratie">
+	<form name="registratiefrm" id="registratiefrm" method="GET">
+		<div>
+			<p><label>Familienaam: </label><input id="familienaam" name="familienaam" type="text"></p>
+			<p><label>Voornaam: </label><input id="voornaam" name="voornaam" type="text"></p>
+			<p><label>Geboortedatum: </label><input id="geboortedatum" name="geboortedatum" type="date"></p>
+			<p><label>Email: </label><input id="email" name="email" type="email"></p>
+			<p><label>Gebruikersnaam: </label><input id="nickname" name="nickname" type="text"></p>
+			<p><label>Beroep: </label><input id="beroep" name="beroep" type="text"></p>
+			<p><label>Sexe: </label>
+				<label for="man">Man</label>
+				<input id="man" type="radio" name="sexe" value ="m" checked>
+				<label for="vrouw">Vrouw</label>
+				<input id="vrouw" type="radio" name="sexe" value="v"></p>
+			<p><label>Haarkleur: </label><input id="haarkleur" name="haarkleur" type="text"></p>
+			<p><label>Oogkleur: </label><input id="oogkleur" name="oogkleur" type="text"></p>
+			<p><label>Grootte: </label><input id="grootte" name="grootte" type="number" min="1" max="3" step="any"></p>
+			<p><label>Gewicht: </label><input id="gewicht" name="gewicht" type="number" min="30" max="300" step="any"></p>
+			<p><label>Wachtwoord: </label><input id="wachtwoord" name="wachtwoord" type="password"></p>
+			<p><label>Wachtwoord opnieuw: </label><input id="wachtwoordctrl" name="wachtwoordctrl" type="password" ></p>
+			<p><input id="submit" value="Registreer" type="submit" class="formulier"></p>
+		</div>
+	</form>
+</div>
+</body>
+</html>
