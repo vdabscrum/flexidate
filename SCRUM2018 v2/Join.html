@@ -1,5 +1,4 @@
-﻿
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
 <head>
 <title>Playful Dating</title>
@@ -117,8 +116,11 @@ html div.ow_console_list_wrapper
     line-height:9px;
 }
 </style><link rel="shortcut icon" type="image/x-icon" href="https://demo.skadate.com/ow_userfiles/plugins/base/favicon.ico" />
-<script type="text/javascript" src="https://demo.skadate.com/ow_static/plugins/base/js/jquery.min.js"></script>
-<script type="text/javascript" src="https://demo.skadate.com/ow_static/plugins/base/js/jquery-migrate.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script async src="js/flexi_scrum_2.1.0.js"></script>
+<script src="js/registratie.js"></script>	
+
 <meta name="robots" content="noindex">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 </head>
@@ -180,7 +182,7 @@ Before proceeding you need to register your profile and become our member.</p>
 </div>
 </div>
 <div class="ow_logo_wrap">
-<a href="#" class="sitelogo"></a>
+<a href="https://demo.skadate.com/" class="sitelogo"></a>
 </div>
 <div class="ow_menu_wrap"><ul class="ow_main_menu clearfix">
 <li class="base_main_menu_index"><a href="main.html"><span>Main</span></a></li></ul></div>
@@ -188,261 +190,250 @@ Before proceeding you need to register your profile and become our member.</p>
 <div class="ow_page_container">
 <div class="ow_canvas">
 <div class="ow_page ow_bg_color clearfix">
-<h1 class="ow_stdmargin ow_ic_file">Join our community</h1> <div class="ow_content">
+<h1 class="ow_stdmargin ow_ic_file">Kom en vind geluk!</h1> <div class="ow_content">
 <div class="ow_automargin ow_std_margin ow_txtright">
 </div>
 <div class="ow_box_empty ow_superwide ow_automargin ow_no_cap ow_break_word">
 <div class="ow_box_empty ow_center ow_no_cap ow_break_word" style="padding:15px;">
-Join our fast-growing community. Find new friends, date up, share photo and video.
-Enjoy!
 </div>
 
 <div class="ow_box_cap_empty">
 <div class="ow_box_cap_right">
 <div class="ow_box_cap_body">
-<h3 class="ow_ic_user">Register your profile</h3>
+<h3 class="ow_ic_user">Registreer je profiel</h3>
 </div>
 </div>
 </div>
 <div class="ow_box_empty ow_break_word">
 </div>
-<form id="joinForm" method="post" action="https://demo.skadate.com/skadate/join/join-form-submit/" name="joinForm">
+<form name="registratiefrm" id="registratiefrm" method="post">
 <input name="form_name" id="input_r35owiz4" type="hidden" value="joinForm" />
 <input name="csrf_token" id="input_n17ywi6o" type="hidden" value="MTUyMzI2NTg1N2o0anlLQVdPcjRWVUtJV2VrNG1leFlHSUxFSzN6aUxP" />
 <table class="ow_table_1 ow_form">
-<tr class="ow_tr_first"><th colspan="3">Basic</th></tr> <tr class="ow_eq4bu9im25acb300001a3c ow_alt2  ">
-<td class="ow_label">
-<label for="input_muguj1je">Username</label>
-</td>
-<td class="ow_value">
-<input name="1ryd3mapor5acb30000198c" id="input_muguj1je" type="text" class="ow_username_validator" />
-<div style="height:1px;"></div>
-<span id="input_muguj1je_error" style="display:none;" class="error"></span>
-</td>
-<td class="ow_desc">
-Should contain only latin letters and digits.
-</td>
+<tr class="ow_tr_first"><th colspan="3">Uw gegevens</th></tr> <tr class="ow_eq4bu9im25acb300001a3c ow_alt2  ">
 </tr>
-<tr class="ow_3tir3w25acb300001bb0 ow_alt2  ">
-<td class="ow_label">
-<label for="input_52z2ny64">Username</label>
-</td>
-<td class="ow_value">
-<input name="4ge7imypety9i5acb300001b04" id="input_52z2ny64" type="text" class="ow_username_validator" />
-<div style="height:1px;"></div>
-<span id="input_52z2ny64_error" style="display:none;" class="error"></span>
-</td>
-<td class="ow_desc">
-Should contain only latin letters and digits.
-</td>
-</tr>
-<tr class="ow_2g1ham153r5acb300001d18 ow_alt2  ">
-<td class="ow_label">
-<label for="input_83ruryt1">Username</label>
-</td>
-<td class="ow_value">
-<input name="ug4k4d35acb300001c6c" id="input_83ruryt1" type="text" class="ow_username_validator" />
-<div style="height:1px;"></div>
-<span id="input_83ruryt1_error" style="display:none;" class="error"></span>
-</td>
-<td class="ow_desc">
-Should contain only latin letters and digits.
-</td>
-</tr>
+
 <tr class="ow_3rel15acb300001e7b ow_alt1  ">
 <td class="ow_label">
-<label for="input_ryhiv1ly">Username</label>
+<label for="input_ryhiv1ly">Familienaam</label>
 </td>
+
 <td class="ow_value">
-<input name="idis2zih5acb300001dd1" id="input_ryhiv1ly" type="text" class="ow_username_validator" />
+<input name="familienaam" id="familienaam" type="text" class="ow_username_validator" />
 <div style="height:1px;"></div>
 <span id="input_ryhiv1ly_error" style="display:none;" class="error"></span>
 </td>
+
 <td class="ow_desc">
-Should contain only latin letters and digits.
+<!-- Should contain only latin letters and digits. -->
 </td>
 </tr>
-<tr class="ow_alt2  ">
-<td class="ow_label">
-<label for="input_t1k1le71">Email</label>
-</td>
-<td class="ow_value">
-<input name="email" id="input_t1k1le71" type="text" class="ow_email_validator" />
-<div style="height:1px;"></div>
-<span id="input_t1k1le71_error" style="display:none;" class="error"></span>
-</td>
-<td class="ow_desc">
-Should be valid
-</td>
-</tr>
-<tr class="ow_alt1  ">
-<td class="ow_label">
-<label for="input_8283d3jy">Password</label>
-</td>
-<td class="ow_value">
-<input name="password" id="input_8283d3jy" type="password" />
-<div style="height:1px;"></div>
-<span id="input_8283d3jy_error" style="display:none;" class="error"></span>
-</td>
-<td class="ow_desc">
-&nbsp;
-</td>
-</tr>
+
 <tr class="ow_alt2 ">
-<td class="ow_label">
-<label for="input_m3qydon3">Repeat password</label>
-</td>
-<td class="ow_value">
-<input name="repeatPassword" id="input_m3qydon3" type="password" />
-<div style="height:1px;"></div>
-<span id="input_m3qydon3_error" style="display:none;" class="error"></span>
-</td>
-<td class="ow_desc">
-</td>
+
+    <td class="ow_label">
+        <label for="input_m3qydon3">Voornaam</label>
+    </td>
+
+    <td class="ow_value">
+        <input id="voornaam" name="voornaam" type="text">
+    <div style="height:1px;"></div>
+        <span id="input_m3qydon3_error" style="display:none;" class="error"></span>
+    </td>
+    <td class="ow_desc">
+
+    </td>
 </tr>
+
+<tr class="ow_alt1  ">
+
+    <td class="ow_label">
+        <label for="input_8283d3jy">Geboortedatum</label>
+    </td>
+
+    <td class="ow_value">
+        <input id="geboortedatum" name="geboortedatum" type="date">
+        <div style="height:1px;"></div>
+        <span id="input_8283d3jy_error" style="display:none;" class="error"></span>
+    </td>
+
+    <td class="ow_desc">
+    &nbsp;
+    </td>
+</tr>
+
+<tr class="ow_alt2  ">
+
+    <td class="ow_label">
+        <label for="input_t1k1le71">Email</label>
+    </td>
+
+    <td class="ow_value">
+        <input id="email" name="email" type="email" class="ow_email_validator" />
+        <div style="height:1px;"></div>
+        <span id="input_t1k1le71_error" style="display:none;" class="error"></span>
+    </td>
+
+    <td class="ow_desc">
+        Moet valideerbaar zijn
+    </td>
+</tr>
+
+<tr class="ow_alt1  ">
+
+    <td class="ow_label">
+        <label for="input_8283d3jy">Gebruikersnaam</label>
+    </td>
+
+    <td class="ow_value">
+        <input id="nickname" name="nickname" type="text"><div style="height:1px;"></div>
+        <span id="input_8283d3jy_error" style="display:none;" class="error"></span>
+    </td>
+
+    <td class="ow_desc">
+        &nbsp;
+    </td>
+</tr>
+
+<tr class="ow_alt2 ">
+    <td class="ow_label">
+        <label for="input_m3qydon3">Beroep</label>
+    </td>
+
+    <td class="ow_value">
+        <input id="beroep" name="beroep" type="text">
+        <div style="height:1px;"></div>
+        <span id="input_m3qydon3_error" style="display:none;" class="error"></span>
+    </td>
+
+    <td class="ow_desc">
+
+    </td>
+</tr>
+
 <tr class="ow_od4wi5acb300002007 ow_alt1  ">
-<td class="ow_label">
-<label for="input_se6ira83">Gender</label>
-</td>
-<td class="ow_value">
-<select name="o535a5acb300001f5b" id="input_se6ira83"><option value="">Select</option><option value="1">Male</option><option value="2">Female</option></select>
-<div style="height:1px;"></div>
-<span id="input_se6ira83_error" style="display:none;" class="error"></span>
-</td>
-<td class="ow_desc">
-&nbsp;
-</td>
+
+    <td class="ow_label">
+        <label for="input_se6ira83">Sexe</label>
+    </td>
+
+    <td class="ow_value">        
+        <label for="man">Man</label>
+        <input id="man" type="radio" name="sexe" value ="m" checked>
+        <label for="vrouw">Vrouw</label>
+        <input id="vrouw" type="radio" name="sexe" value="v">
+        <div style="height:1px;"></div>
+        <span id="input_se6ira83_error" style="display:none;" class="error"></span>
+    </td>
+
+    <td class="ow_desc">
+        &nbsp;
+    </td>
 </tr>
-<tr class="ow_eqezoqo5acb30000216d ow_alt1  ">
-<td class="ow_label">
-<label for="input_mu6ewyzo">Gender</label>
-</td>
-<td class="ow_value">
-<select name="1ho9yb5acb3000020c2" id="input_mu6ewyzo"><option value="">Select</option><option value="1">Male</option><option value="2">Female</option></select>
-<div style="height:1px;"></div>
-<span id="input_mu6ewyzo_error" style="display:none;" class="error"></span>
-</td>
-<td class="ow_desc">
- &nbsp;
-</td>
+
+<tr class="ow_alt2 ">
+    <td class="ow_label">
+        <label for="input_m3qydon3">Haarkleur</label>
+    </td>
+    
+    <td class="ow_value">
+        <input id="haarkleur" name="haarkleur" type="text">
+        <div style="height:1px;"></div>
+        <span id="input_m3qydon3_error" style="display:none;" class="error"></span>
+    </td>
+    
+    <td class="ow_desc">
+    
+    </td>
 </tr>
-<tr class="ow_it3r1g5acb3000022d0 ow_alt2  ">
-<td class="ow_label">
-<label for="input_6ohiz4m1">Gender</label>
-</td>
-<td class="ow_value">
-<select name="uxuk3r46uj5acb300002229" id="input_6ohiz4m1"><option value="">Select</option><option value="1">Male</option><option value="2">Female</option></select>
-<div style="height:1px;"></div>
-<span id="input_6ohiz4m1_error" style="display:none;" class="error"></span>
-</td>
-<td class="ow_desc">
-&nbsp;
-</td>
+    
+<tr class="ow_od4wi5acb300002007 ow_alt1  ">
+    
+    <td class="ow_label">
+        <label for="input_se6ira83">Oogkleur</label>
+    </td>
+    
+    <td class="ow_value">        
+        <input id="oogkleur" name="oogkleur" type="text">
+        <div style="height:1px;"></div>
+        <span id="input_se6ira83_error" style="display:none;" class="error"></span>
+    </td>
+    
+    <td class="ow_desc">
+        &nbsp;
+    </td>
 </tr>
-<tr class="ow_3rar3t25acb30000242e ow_alt2  ">
-<td class="ow_label">
-<label for="input_w1sev1to">Gender</label>
-</td>
-<td class="ow_value">
-<select name="45y61r3huq1x5acb300002387" id="input_w1sev1to"><option value="">Select</option><option value="1">Male</option><option value="2">Female</option></select>
-<div style="height:1px;"></div>
-<span id="input_w1sev1to_error" style="display:none;" class="error"></span>
-</td>
-<td class="ow_desc">
-&nbsp;
-</td>
+
+<tr class="ow_alt2 ">
+            <td class="ow_label">
+                <label for="input_m3qydon3">Grootte</label>
+            </td>
+        
+            <td class="ow_value">
+                <input id="grootte" name="grootte" type="number" min="1" max="3" step="any">
+                <div style="height:1px;"></div>
+                <span id="input_m3qydon3_error" style="display:none;" class="error"></span>
+            </td>
+        
+            <td class="ow_desc">
+        
+            </td>
 </tr>
-<tr class="ow_um16oga5acb30000258b ow_alt2  ">
-<td class="ow_label">
-<label for="input_q2l3xus3">Gender</label>
-</td>
-<td class="ow_value">
-<select name="ageqetat3kiv5acb3000024e3" id="input_q2l3xus3"><option value="">Select</option><option value="1">Male</option><option value="2">Female</option></select>
-<div style="height:1px;"></div>
-<span id="input_q2l3xus3_error" style="display:none;" class="error"></span>
-</td>
-<td class="ow_desc">
-&nbsp;
-</td>
+        
+<tr class="ow_od4wi5acb300002007 ow_alt1  ">
+        
+            <td class="ow_label">
+                <label for="input_se6ira83">Gewicht</label>
+            </td>
+        
+            <td class="ow_value">        
+                <input id="gewicht" name="gewicht" type="number" min="30" max="300" step="any">
+                <div style="height:1px;"></div>
+                <span id="input_se6ira83_error" style="display:none;" class="error"></span>
+            </td>
+        
+            <td class="ow_desc">
+                &nbsp;
+            </td>
+ </tr>
+
+ <tr class="ow_alt2 ">
+        <td class="ow_label">
+            <label for="input_m3qydon3">Wachtwoord</label>
+        </td>
+    
+        <td class="ow_value">
+                <input id="wachtwoord" name="wachtwoord" type="password">
+            <div style="height:1px;"></div>
+            <span id="input_m3qydon3_error" style="display:none;" class="error"></span>
+        </td>
+    
+        <td class="ow_desc">
+    
+        </td>
 </tr>
-<tr class="ow_1qip1xih45acb3000026e7 ow_alt2  ">
-<td class="ow_label">
-<label for="input_b362let2">Gender</label>
-</td>
-<td class="ow_value">
-<select name="iwogy5acb30000263f" id="input_b362let2"><option value="">Select</option><option value="1">Male</option><option value="2">Female</option></select>
-<div style="height:1px;"></div>
-<span id="input_b362let2_error" style="display:none;" class="error"></span>
-</td>
-<td class="ow_desc">
-&nbsp;
-</td>
-</tr>
-<tr class="ow_ozyt4l5acb300002844 ow_alt2  ">
-<td class="ow_label">
-<label for="input_z17idune">Gender</label>
-</td>
-<td class="ow_value">
-<select name="u9yw1j4b37ulo5acb30000279d" id="input_z17idune"><option value="">Select</option><option value="1">Male</option><option value="2">Female</option></select>
-<div style="height:1px;"></div>
-<span id="input_z17idune_error" style="display:none;" class="error"></span>
-</td>
-<td class="ow_desc">
- &nbsp;
-</td>
-</tr>
-<tr class="ow_27uvyhaha5acb3000029ae ow_alt2  ">
-<td class="ow_label">
-<label>Looking for</label>
-</td>
-<td class="ow_value">
-<ul class="ow_checkbox_group clearfix"><li style="width:100%"><input name="4j1ryn15acb300002906[]" id="input_lom2gyju" type="checkbox" value="1" />&nbsp;<label for="input_lom2gyju">Male</label></li><li style="width:100%"><input name="4j1ryn15acb300002906[]" id="input_toxy8ebu" type="checkbox" value="2" />&nbsp;<label for="input_toxy8ebu">Female</label></li></ul>
-<div style="height:1px;"></div>
-<span id="input_toxy8ebu_error" style="display:none;" class="error"></span>
-</td>
-<td class="ow_desc">
-</td>
-</tr>
-<tr class="ow_oj1w1z1l5acb300002b0c ow_alt2  ">
-<td class="ow_label">
-<label>Looking for</label>
-</td>
-<td class="ow_value">
-<ul class="ow_checkbox_group clearfix"><li style="width:100%"><input name="1w49475acb300002a64[]" id="input_koz26ohe" type="checkbox" value="1" />&nbsp;<label for="input_koz26ohe">Male</label></li><li style="width:100%"><input name="1w49475acb300002a64[]" id="input_719i83b3" type="checkbox" value="2" />&nbsp;<label for="input_719i83b3">Female</label></li></ul>
-<div style="height:1px;"></div>
-<span id="input_719i83b3_error" style="display:none;" class="error"></span>
-</td>
-<td class="ow_desc">
-</td>
-</tr>
-<tr class="ow_er1t1ru63x5acb300002c69 ow_alt2  ">
-<td class="ow_label">
-<label>Looking for</label>
-</td>
-<td class="ow_value">
-<ul class="ow_checkbox_group clearfix"><li style="width:100%"><input name="i8il3ti5acb300002bc1[]" id="input_9ig3v3w1" type="checkbox" value="1" />&nbsp;<label for="input_9ig3v3w1">Male</label></li><li style="width:100%"><input name="i8il3ti5acb300002bc1[]" id="input_x1d2ler4" type="checkbox" value="2" />&nbsp;<label for="input_x1d2ler4">Female</label></li></ul>
-<div style="height:1px;"></div>
-<span id="input_x1d2ler4_error" style="display:none;" class="error"></span>
-</td>
-<td class="ow_desc">
-</td>
-</tr>
-<tr class="ow_ah2k29e75acb300002dc5 ow_alt2  ow_tr_last">
-<td class="ow_label">
-<label>Looking for</label>
-</td>
-<td class="ow_value">
-<ul class="ow_checkbox_group clearfix"><li style="width:100%"><input name="ehoge5acb300002d1e[]" id="input_7yp2maqe" type="checkbox" value="1" />&nbsp;<label for="input_7yp2maqe">Male</label></li><li style="width:100%"><input name="ehoge5acb300002d1e[]" id="input_52qat4n2" type="checkbox" value="2" />&nbsp;<label for="input_52qat4n2">Female</label></li></ul>
-<div style="height:1px;"></div>
-<span id="input_52qat4n2_error" style="display:none;" class="error"></span>
-</td>
-<td class="ow_desc">
-</td>
+
+<tr class="ow_ah2k29e75acb300002dc5 ow_alt1  ow_tr_last">
+    <td class="ow_label">
+        <label>Geef nogmaals wachtwoord</label>
+    </td>
+
+    <td class="ow_value">
+        <input id="wachtwoordctrl" name="wachtwoordctrl" type="password" >
+        <div style="height:1px;"></div>
+        <span id="input_52qat4n2_error" style="display:none;" class="error"></span>
+
+    </td>
+        <td class="ow_desc">
+    </td>
 </tr>
  <tr class="ow_tr_delimiter"><td></td></tr> </table>
 <div class="clearfix">
 <div class="ow_right">
-<span class="ow_button"><span class=" ow_button ow_ic_submit"><input type="submit" value="Continue" id="input_tyn1lumy" class="ow_button ow_ic_submit" name="joinSubmit" /></span></span>
+<span class="ow_button"><span class=" ow_button ow_ic_submit">
+     <input id="submit" value="Registreer" type="submit" class="formulier ow_button ow_ic_submit">
+    <!-- <input type="submit" value="Continue" id="input_tyn1lumy" class="ow_button ow_ic_submit" name="joinSubmit" /> -->
+</span></span>
 </div>
 </div>
 </form>
