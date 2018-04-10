@@ -1,0 +1,326 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+<head>
+    <title>Playful Dating</title>
+    <meta name="description" content="My Dating Site social network. Meet new friends here today!" />
+    <meta name="keywords" content="Index" />
+    <meta name="og:type" content="website" />
+    <meta name="og:site_name" content="My Dating Site" />
+    <meta name="og:title" content="My Dating Site - Find New Friends Here!" />
+    <meta name="og:description" content="My Dating Site social network. Meet new friends here today!" />
+    <meta name="twitter:title" content="My Dating Site - Find New Friends Here!" />
+    <meta name="twitter:description" content="My Dating Site social network. Meet new friends here today!" />
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-language" content="en" />
+    <link rel="stylesheet" type="text/css" href="https://demo.skadate.com/ow_static/plugins/base/css/ow.css?G3N1BawU" media="all" />
+    <link rel="stylesheet" type="text/css" href="https://demo.skadate.com/ow_static/themes/pencil/base.css?G3N1BawU" media="all" />
+    <link rel="stylesheet" type="text/css" href="https://demo.skadate.com/ow_static/plugins/photo/css/photo_floatbox.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="https://demo.skadate.com/ow_static/plugins/skadate/css/mobile_experience.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="https://demo.skadate.com/ow_static/plugins/skadate/css/skadate.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="https://demo.skadate.com/ow_static/plugins/demoreset/css/demoreset.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="https://demo.skadate.com/ow_static/plugins/bookmarks/css/bookmarks.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="https://demo.skadate.com/ow_static/plugins/protectedphotos/css/style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="https://demo.skadate.com/ow_static/plugins/videoim/css/videoim_request.css?build=10800" media="all" />
+    <link rel="stylesheet" type="text/css" href="https://demo.skadate.com/ow_static/plugins/fbconnect/css/fbconnect.css" media="all" />
+    <!--Login head-->
+    <title>Login</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script async src="js/flexi_scrum_2.1.0.min.js"></script>
+    <script src="js/login.js"></script>
+    <script>
+        if (localStorage.getItem("id")) {
+            window.location = "feed.html";
+        }
+    </script>
+    <style media="all">
+        #place_components .component {
+            float: left;
+        }
+
+        .configurable_component .ow_box_icons {
+            float: right;
+            padding-top: 6px;
+        }
+
+        .configurable_component h3 {
+            float: left;
+        }
+
+
+
+        .ow_ipc_toolbar span {
+            display: inline-block;
+        }
+
+
+        .ow_ipc .ow_ipc_info .clearfix .ow_ipc_toolbar {
+            white-space: normal;
+        }
+
+
+
+        .ow_box_toolbar span {
+            display: inline-block;
+        }
+
+
+        .ow_newsfeed_line {
+            display: block;
+        }
+
+
+        .ow_newsfeed_video_embed embed, .ow_newsfeed_video_embed object, .ow_newsfeed_video_embed iframe {
+            height: 220px;
+            width: 300px;
+        }
+
+
+
+        ul.ow_newsfeed {
+            padding: 5px 0px 0px 5px;
+        }
+
+        .ow_newsfeed_avatar {
+            height: 45px;
+            width: 45px;
+            margin-right: -45px;
+            float: left;
+        }
+
+            .ow_newsfeed_avatar img {
+                height: 45px;
+                width: 45px;
+            }
+
+        .ow_newsfeed_body {
+            margin-left: 45px;
+            padding-left: 10px;
+        }
+
+        .ow_newsfeed .ow_newsfeed_item {
+            list-style-image: none;
+            position: relative;
+        }
+
+        .ow_newsfeed_toolbar {
+            float: none;
+        }
+
+        .ow_newsfeed .ow_comments_list {
+            margin-bottom: 0px;
+        }
+
+        .ow_newsfeed_remove {
+            position: absolute;
+            top: 5px;
+            right: 0px;
+            display: none;
+        }
+
+        .ow_newsfeed_body:hover .ow_newsfeed_remove {
+            display: block;
+        }
+
+        .ow_newsfeed_delimiter {
+            border-bottom-width: 1px;
+            height: 1px;
+            margin-bottom: 7px;
+        }
+
+        .ow_newsfeed_doublesided_stdmargin {
+            margin: 14px 0px;
+        }
+
+        .ow_newsfeed_likes {
+            margin-bottom: 3px;
+        }
+
+        .ow_newsfeed_tooltip .tail {
+            padding-left: 25px;
+        }
+
+        .ow_newsfeed_placeholder {
+            height: 30px;
+            background-position: center 5px;
+        }
+
+        .ow_newsfeed_view_more_c {
+            text-align: center;
+        }
+
+        .ow_newsfeed_string {
+            max-width: 600px;
+        }
+
+        .ow_newsfeed_item_content {
+            min-width: 50px;
+        }
+
+        .ow_newsfeed_item_picture + .ow_newsfeed_item_content {
+            float: left;
+            width: 69%;
+            max-width: 440px;
+        }
+
+        .ow_newsfeed_features {
+            max-width: 450px;
+            overflow: hidden;
+            min-height: 62px;
+        }
+
+        .ow_newsfeed_feedback_counter {
+            padding: 2px 5px;
+        }
+
+        .ow_newsfeed_activity_content {
+            border-top-style: dashed;
+            border-top-width: 1px;
+            padding-top: 3px;
+        }
+
+        .ow_newsfeed_comments .ow_add_comments_form {
+            margin-bottom: 0px;
+        }
+
+        .ow_wink_icon {
+            background-image: url(https://demo.skadate.com/ow_static/plugins/winks/images/ic_wink.png);
+            display: inline-block;
+            height: 13px;
+            width: 13px;
+            margin: 0 0 0 6px;
+            vertical-align: text-bottom;
+        }
+
+        .connect_button_list {
+            padding-top: 5px;
+        }
+
+
+
+        html div.ow_console_list_wrapper {
+            min-height: 0px;
+            max-height: 257px;
+        }
+
+
+
+
+        .ow_qs_header {
+            padding-bottom: 20px;
+        }
+
+        .ow_qs_field {
+            padding-bottom: 15px;
+        }
+
+        .ow_qs_label {
+            padding: 0 10px 0 10px;
+        }
+
+        .ow_qs_field input[type="text"] {
+            max-width: 70%;
+        }
+
+        .ow_qs_field input.ow_googlelocation_search_location {
+            max-width: 100%;
+        }
+
+        .ow_qs_field .ow_qs_miles {
+            width: 50px;
+            text-align: center;
+        }
+
+        .ow_qs_field .ow_qs_locationstr {
+            width: 150px;
+        }
+
+        form .ow_googlelocation_search_distance {
+            text-align: center;
+        }
+
+        .ow_qs_btn .ow_qs_label {
+            padding: 6px 10px 0px;
+            display: inline-block;
+        }
+
+        .ow_join_button {
+            display: inline-block;
+            margin-right: 5px;
+        }
+    </style>
+    <link rel="shortcut icon" type="image/x-icon" href="https://demo.skadate.com/ow_userfiles/plugins/base/favicon.ico" />
+    <script type="text/javascript" src="https://demo.skadate.com/ow_static/plugins/base/js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://demo.skadate.com/ow_static/plugins/base/js/jquery-migrate.min.js"></script>
+    <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+</head>
+<!--[if IE 8]><body class="ow ie8 pencil base_index_page"><![endif]-->
+<!--[if !IE 8]><!--><body class="ow pencil base_index_page"><!--<![endif]-->
+<div class="ow_page_wrap">
+<div class="ow_page_padding">
+<div class="ow_site_panel">
+<div class="ow_console clearfix">
+<div class="ow_console_body clearfix">
+<div class="ow_console_items_wrap">
+<div style="display:none"><div id="base_cmp_floatbox_ajax_signin"><div class="ow_sign_in_wrap">
+<h2>My Dating Site</h2>
+
+<div class="clearfix">
+<div class="ow_sign_in">
+
+<div class="ow_box ow_break_word">
+<div class="ow_user_name">
+<input name="identity" id="input_3rygyw1h" type="text" placeholder="Username/Email" />
+</div>
+<div class="ow_password">
+<input name="password" id="input_1v3z254z" type="password" placeholder="Password" />
+</div>
+
+<div class="ow_box_bottom_left"></div>
+<div class="ow_box_bottom_right"></div>
+<div class="ow_box_bottom_body"></div>
+<div class="ow_box_bottom_shadow"></div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ow_header clearfix">
+    <div class="ow_logo_wrap" style="padding-top:0px">
+        <a href="" class="sitelogo"></a>
+        <div class="ow_join_button">
+            <a href="join.html" class="index_join_button">Join Now!</a>
+            <a href="#" class="login_button index_join_button" >Log In!</a>
+            <div>
+                <form id="login" style= "visibility: hidden" >
+                    <label for="email">Email</label>
+                    <input type="text" name="email" />
+                    <label for="password">Wachtwoord</label>
+                    <input type="password" name="password" />
+                    <input type="submit" value="Login" style="color:black"/>
+                    <p class="message"></p>
+                </form>
+            </div>
+        </div>       
+    </div>
+<div class="ow_box index_qs ow_right ow_no_cap ow_break_word">
+
+<div class="ow_qs">
+
+</div>
+<div class="ow_box_bottom_left"></div>
+<div class="ow_box_bottom_right"></div>
+<div class="ow_box_bottom_body"></div>
+<div class="ow_box_bottom_shadow"></div>
+</div>
+</div>
+</body>
+</html>
