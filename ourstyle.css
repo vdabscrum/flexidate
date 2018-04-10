@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+.ow_main_menu li span {
+    color: #715848; /** OW_Control type:color, key:menuColor, section:2. Colors, label:4. Menu text color **/
+    display: inline-block;
+    font-size: 16px;
+    padding: 2px 8px 6px 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: none;
+    font-weight: normal;
+}
+
+#feed {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#feed div {
+    padding: 1em;
+    width: 100%;
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2);
+    margin-bottom: 2em;
+}
+
+#feed div h3 {
+        font-family: 'Indie Flower', cursive;
+        font-size: 2em;
+        display: inline-block;
+        padding: 1em;
+}
+
+#feed dt {
+    padding: 0.2em 1em;
+    float: left;
+    width: 100px;
+    text-align: right;
+    text-transform: uppercase;
+}
+ #feed dd {
+     padding: 0.2em 1em;
+ }
+
+
+#feed dd:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
