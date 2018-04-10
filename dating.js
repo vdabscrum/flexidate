@@ -1,13 +1,17 @@
 
 window.onload = function(){
-  let Paul = "56cae42a683485281caf5652"
-  sendMessage("56cae42a683485281caf5656", "Hoe gaat het?", Paul);
-  sendMessage("56cae42a683485281caf5655", "Cv?", Paul);
+  let aMensen = createFeed(undefined, undefined, undefined, undefined, undefined, undefined, "blauw", "blond", "m");
+  let Paul = "56cae42a683485281caf5652";
+  //sendMessage("56cae42a683485281caf5656", "Hoe gaat het?", Paul);
+  //sendMessage("56cae42a683485281caf5655", "Cv?", Paul);
+    blindDate("56cae42a683485281caf5656", "Hoe gaat het?",aMensen);
   let berichten = loadMessages(Paul);
   alert("U heeft " + berichten.length + " berichten.");
   for (i=0; i < berichten.length; i++){
     showMessage(berichten[i]);
   }
+  // blindDate
+
 }
 
 //24 is de lengte van id
@@ -16,7 +20,6 @@ function sendMessage(zenderId, msg, ontvangerId)
 {
   let combinedMsg = zenderId + msg;
   saveMessage(combinedMsg, ontvangerId);
-
 }
 
 function saveMessage(msg, ontvangerId)
@@ -53,4 +56,10 @@ function showMessage(msg) {
   eP.innerHTML = message;
   eDiv.appendChild(eP);
   document.getElementById("inbox").appendChild(eDiv);
+}
+
+function blindDate(zender, msg, aPeople)
+{
+    let ontvanger = aPeople[Math.floor(Math.random() * aPeople.length)];
+    sendMessage(zender, msg, ontvanger._id);
 }
