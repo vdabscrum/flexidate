@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+.ow_main_menu li span {
+  color: #715848;
+  /** OW_Control type:color, key:menuColor, section:2. Colors, label:4. Menu text color **/
+  display: inline-block;
+  font-size: 16px;
+  padding: 2px 8px 6px 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: none;
+  font-weight: normal;
+}
+
+#uitloggen span:hover, #personBlindDate a span:hover {
+  text-decoration: underline;
+  color: #F094A7;
+}
+
+#feed, #inbox {
+  margin: 2em auto;
+  padding: 0;
+}
+
+#feed {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#feed div {
+  position: relative;
+  padding: 1em 1em 1em 2em;
+  width: 100%;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2em;
+}
+
+#feed div h3 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 2em;
+  display: inline-block;
+  padding: 1em 0 1em 3em;
+}
+
+#feed dt {
+  padding: 0.2em 1em;
+  float: left;
+  width: 100px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+#feed dd {
+  padding: 0.2em 1em;
+}
+
+#feed dd:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+#feed div.sterrenbeeld {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: rgba(232, 136, 16, 0.9);
+  color: white;
+  height: 1.2em;
+  line-height: 1.2em;
+  width: 100px;
+  border-bottom-left-radius: 1em;
+  text-align: right;
+  padding-right: 1em;
+  letter-spacing: 0.1em;
+}
+
+.messageButton, .messageBox button {
+  background-color: rgba(232, 136, 16, 0.9);
+  padding: 0.6em 1.2em;
+  border: none;
+  text-align: center;
+  margin: 1em 0 0 2em;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
+}
+
+.messageButton:hover, .messageBox div.sendMessageButton:hover {
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.messageBox {
+  position: relative;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  height: 400px;
+  margin-left: -400px;
+  margin-top: -200px;
+  background-color: white;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+  visibility: hidden;
+  padding: 4em;
+}
+
+.messageBox h3 {
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+
+.messageBox div.closeCircle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2em;
+}
+
+.messageBox textarea {
+  padding: 1em;
+  text-indent: 0;
+  height: 200px;
+}
+
+.messageBox div.sendMessageButton {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  height: 2em;
+  padding: 0.6em 1em 0.2em 1em;
+  color: white;
+  background-color: rgba(232, 136, 16, 0.9);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.closeCircle {
+  cursor: pointer;
+}
+
+.closeCircle:hover {
+  transform: rotate(-35deg);
+}
+
+/* messages */
+
+#inbox div.inbox-message {
+  position: relative;
+  padding: 1em 2em;
+  border-radius: 0.2em;
+  background-color: white;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+  margin: 1em 2em;
+  padding-right: 120px;
+}
+
+#inbox div.inbox-message:hover, #feed div:hover {
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+#inbox div.inbox-message a::before, #inbox div.inbox-message p::before {
+  text-transform: uppercase;
+  display: inline-block;
+  width: 5em;
+  text-align: right;
+  padding-right: 1em;
+  color: #F094A7;
+}
+
+#inbox div.inbox-message a::before {
+  content: "van ";
+}
+
+#inbox div.inbox-message p::before {
+  content: "Bericht ";
+}
+
+#inbox div.trashDiv, #inbox div.replyDiv {
+  font-size: 1em;
+  position: absolute;
+  right: 20px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+#inbox div.trashDiv {
+  top: 40px;
+}
+
+#inbox div.replyDiv {
+  top: 10px;
+}
+
+#inbox div.trashDiv:hover {
+  color: #F094A7;
+}
+
+#inbox div.replyDiv:hover {
+  color: #F094A7;
+}
+
+#inbox div.trashDiv:hover, #inbox div.replyDiv:hover {
+  cursor: pointer;
+}
+
+#showLoginInfo ul li:not(:last-child) {
+  border-right: 2px solid #F094A7;
+}
+
+.index_join_button:hover {
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+/*begin stijl zoeken*/
+
+#zoeken {
+  margin: 2em auto;
+  padding: 0;
+
+  position: relative;
+  padding: 1em;
+  padding-right: 400px;
+  width: auto;
+  height: auto;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2em;
+}
+
+#zoeken li {
+  margin: 1em;
+}
+
+#zoeken li div {
+  float: right;
+}
+
+.vindMijnMatch {
+  font-family: 'Indie Flower', cursive;
+  font-size: 2em;
+  display: inline-block;
+  padding: 1em;
+}
+
+.matchButton {
+  background-color: rgba(232, 136, 16, 0.9);
+  padding: 0.6em 1.2em;
+  border: none;
+  text-align: center;
+  margin: 1em 0 0 2em;
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+}
+
+.matchButton:hover {
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+/*end stijl zoeken*/
+
+
+
+/* lovecoin */
+
+#feed .messageButton {
+  position: relative;
+}
+
+#feed .messageButton > div {
+  position: absolute;
+  padding: 4px;
+  margin: 0;
+  top: -10px;
+  right: -10px;
+  border: none;
+  box-shadow: none;
+  background-color: none;
+  width: 12px;
+  height: 12px;
+  background-color: red;
+  border-radius: 50%
+}
